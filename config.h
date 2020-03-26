@@ -190,6 +190,7 @@ ResourcePref resources[] = {
 		{ "cwscale",      FLOAT,   &cwscale },
 		{ "chscale",      FLOAT,   &chscale },
 		{ "alpha",        FLOAT,   &alpha },
+		{ "boldFont",     INTEGER, &disablebold },
 };
 
 /*
