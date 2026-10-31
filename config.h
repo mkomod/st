@@ -215,6 +215,7 @@ static MouseShortcut mshortcuts[] = {
 	{ XK_ANY_MOD,           Button4, kscrollup,      {.i = 1},      0, /* !alt */ -1 },
 	{ XK_ANY_MOD,           Button5, kscrolldown,    {.i = 1},      0, /* !alt */ -1 },
 	{ XK_ANY_MOD,           Button2, selpaste,       {.i = 0},      1 },
+	{ XK_ANY_MOD,           Button3, clippaste,      {.i = 0},      1 },
 	{ XK_ANY_MOD,           Button4, ttysend,        {.s = "\031"} },
 	{ XK_ANY_MOD,           Button5, ttysend,        {.s = "\005"} },
 };
@@ -374,6 +375,7 @@ static Key key[] = {
 	{ XK_Right,         XK_ANY_MOD,     "\033OC",        0,   +1},
 	{ XK_ISO_Left_Tab,  ShiftMask,      "\033[Z",        0,    0},
 	{ XK_Return,        Mod1Mask,       "\033\r",        0,    0},
+	{ XK_Return,        ShiftMask,      "\033\r",        0,    0},
 	{ XK_Return,        XK_ANY_MOD,     "\r",            0,    0},
 	{ XK_Insert,        ShiftMask,      "\033[4l",      -1,    0},
 	{ XK_Insert,        ShiftMask,      "\033[2;2~",    +1,    0},
@@ -389,6 +391,7 @@ static Key key[] = {
 	{ XK_Delete,        XK_ANY_MOD,     "\033[3~",      +1,    0},
 	{ XK_BackSpace,     XK_NO_MOD,      "\177",          0,    0},
 	{ XK_BackSpace,     Mod1Mask,       "\033\177",      0,    0},
+	{ XK_BackSpace,     ControlMask,    "\027",          0,    0},
 	{ XK_Home,          ShiftMask,      "\033[2J",       0,   -1},
 	{ XK_Home,          ShiftMask,      "\033[1;2H",     0,   +1},
 	{ XK_Home,          XK_ANY_MOD,     "\033[H",        0,   -1},
